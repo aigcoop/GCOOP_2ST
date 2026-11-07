@@ -20,11 +20,11 @@
   --bg:#0f1715; --surface:#17221f; --ink:#e6eeeb; --muted:#97a8a2; --line:#2a3834;
   --accent:#5fbf9f; --accent-ink:#0b1412; --accent-soft:#1c322b; --amber:#f0a75a; --amber-soft:#33261a; color-scheme:dark}
 *{box-sizing:border-box}
-body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.6;word-break:keep-all;overflow-wrap:anywhere}
 .wrap{max-width:1180px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 64px;display:grid;gap:22px}
 header{display:grid;gap:10px}
-.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;color:var(--accent);text-transform:uppercase}
-h1{font-family:var(--display);font-weight:900;font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.eyebrow{font-family:var(--display);font-weight:800;font-size:clamp(17px,3.6vw,22px);letter-spacing:-.005em;color:var(--accent)}
+h1{word-break:keep-all;font-family:var(--display);font-weight:900;font-size:clamp(28px,5vw,44px);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.01em}
 .lead{margin:0;color:var(--muted);max-width:62ch}
 .stats{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:13px;color:var(--muted)}
 .stats b{color:var(--ink);font-variant-numeric:tabular-nums}
@@ -85,7 +85,7 @@ input[type=search]{font:15px var(--body);padding:9px 12px;border-radius:10px;bor
 <div class="wrap">
   <header>
     <div class="eyebrow">지쿱AI대학교 · 2학년 종합반</div>
-    <h1>지쿱 제품설명서 프롬프트북</h1>
+    <h1>지쿱 제품설명서<br>프롬프트북</h1>
     <p class="lead">AI 실습에 쓸 지쿱 제품설명서 PDF 50종이에요. 버튼 한 번으로 전부 받거나, 브랜드별·골라서 받거나, 한 개씩 받을 수 있어요.</p>
     <div class="stats"><span>제품 <b id="stCount">50</b>종</span><span>총 <b id="stPages">0</b>쪽</span><span>전체 용량 <b id="stSize">0</b></span></div>
   </header>
